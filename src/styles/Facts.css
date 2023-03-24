@@ -1,0 +1,58 @@
+main {
+  background-color: #282d35;
+  color: #fff;
+  background-image: url("./background-image.svg");
+  background-size: cover;
+}
+
+.main {
+  height: calc(100vh - 106px);
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: 100vh;
+  }
+}
+
+.fun-facts {
+  padding-top: 100px;
+  padding-bottom: 45px;
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 45px;
+  font-size: 1.2rem;
+}
+
+ul li {
+  padding-bottom: 10px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #61dafb;
+  font-size: 2.5rem;
+  position: relative;
+  right: 10px;
+  top: 5px;
+}
+
+@media (max-width: 600px) {
+  .fun-facts {
+    font-size: 2.5rem;
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+
+  ul {
+    padding-left: 25px;
+  }
+
+  ul li {
+    padding-bottom: 5px;
+    font-size: 1rem;
+  }
+}
